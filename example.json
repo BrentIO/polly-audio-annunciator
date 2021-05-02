@@ -1,0 +1,33 @@
+[
+    {
+        "name": "Example All Fields Included",
+        "outputFormat": "mp3",
+        "voice": "Matthew",
+        "engine": "neural",
+        "language": "en-US",
+        "prepend": {
+            "file": "./prepend/my_sound_to_prepend.mp3",
+            "volume": -10
+        },
+        "sentences": [
+            "Welcome!",
+            "I will speak whatever you place in this array of strings.  It does not matter how you choose to break up the lines.",
+            "However, putting different sentences will create natural breaks in the audio."
+        ]
+    },
+    {
+        "name": "Example Minimum Required Data Entry without prepend",
+        "sentences": [
+            "This is an example of the minimal request that can be made."
+        ]
+    },
+    {
+        "name": "Example Minimum Required Data Entry with prepend",
+        "prepend": {
+            "file": "./prepend/my_sound_to_prepend.mp3"
+        },
+        "sentences": [
+            "This is an example of the minimal request that can be made when prepending with another audio clip."
+        ]
+    }
+]
